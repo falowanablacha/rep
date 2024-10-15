@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+<script src="js/bootstrap.js"></script>
+<h2 class="text-center text-info" >Framework Bootsrap</h2>
+<ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link active text-danger" aria-current="page" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">O nas</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Kontakt</a>
+    </li>
+  </ul>
+
+  <div class="container text-center mt-5">
+    <div class="row">
+      <div class="col">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente cumque hic ut dolorem? Ipsa a ex corporis corrupti commodi est fugit? Quos sit fugiat delectus ullam consequatur cumque nobis laboriosam!</p>
+      </div>
+      <div class="col">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus excepturi adipisci ut tempora inventore minus nihil facilis reprehenderit pariatur, cupiditate sint aliquid culpa. Recusandae quisquam dignissimos facilis reprehenderit dolor amet.</p>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente cumque hic ut dolorem? Ipsa a ex corporis corrupti commodi est fugit? Quos sit fugiat delectus ullam consequatur cumque nobis laboriosam!</p>
+        </div>
+        <div class="col">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus excepturi adipisci ut tempora inventore minus nihil facilis reprehenderit pariatur, cupiditate sint aliquid culpa. Recusandae quisquam dignissimos facilis reprehenderit dolor amet.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente cumque hic ut dolorem? Ipsa a ex corporis corrupti commodi est fugit? Quos sit fugiat delectus ullam consequatur cumque nobis laboriosam!</p>
+        </div>
+        <div class="col">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus excepturi adipisci ut tempora inventore minus nihil facilis reprehenderit pariatur, cupiditate sint aliquid culpa. Recusandae quisquam dignissimos facilis reprehenderit dolor amet.</p>
+        </div>
+      </div>
+    
+    </div>
+
+</body>
+</html>
