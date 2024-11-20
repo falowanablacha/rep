@@ -1,37 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-<?php 
+<?php
 
-$liczba_st = 5;
-$liczba_nd = 4;
-$powtorzenia = 1;
-$operator = '+';
-$maks = 7;
+require_once 'connect.php';
 
-do {
-    switch ($operator) {
-        case '+':
-            echo "witam" . $liczba_st + $liczba_nd;
-            break;
-        
-        default:
-            echo "ni ma takiego znaku";
-            break;
-    }
-    $powtorzenia++;
-} while ( $powtorzenia <= $maks);
+$type_count = 'SELECT COUNT(*) FROM GATUNKI';
+$type_query = mysqli_query($connect,$type_count);
+$type_result = mysqli_fetch_array($type_query);
 
+echo 'Metoda: FETCH ARRAY <br> 
+	  Ilość gatunków w bazie wynosi: '.$type_result[0].'<br><br>';
+	  
+$location_count = 'SELECT COUNT(*) FROM LOKALIZACJE';
+$location_query = mysqli_query($connect,$location_count);
+$location_result = mysqli_fetch_assoc($location_query);
 
+echo 'Metoda: FETCH ASSOC <br> 
+	  Ilość gatunków w bazie wynosi: '.$location_result['COUNT(*)'].'<br><br>';
+	  
+$observation_count = 'SELECT * FROM OBSERWACJE';
+$observation_query = mysqli_query($connect,$observation_count);
+$observation_result = mysqli_num_rows($observation_query);
+
+echo 'Metoda: NUM ROWS <br> 
+	  Ilość gatunków w bazie wynosi: '.$observation_result;
+
+mysqli_close($connect);	  
 
 ?>
-</body>
-</html>
-
