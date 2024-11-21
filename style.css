@@ -1,0 +1,26 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Lacquer&family=Monofett&display=swap'); */
+body{
+    color: white;
+    background-color: black;
+    font-family: fantasy;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.div1{
+    padding: 2px;
+    border: 7px;
+}
+
+.div2{
+    border: 7px solid red; 
+    padding: 5px;
+}
+.formik{
+    padding: 10px;
+    border: 15px;
+}
