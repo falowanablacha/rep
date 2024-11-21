@@ -1,0 +1,20 @@
+<?php
+// Ustawienie daty Sylwestra na 31 grudnia danego roku
+$year = date("Y");  // Bieżący rok
+$sylwesterTimestamp = mktime(0, 0, 0, 12, 31, $year);  // 31 grudnia o północy
+
+// Bieżący czas
+$currentTimestamp = time();
+
+// Obliczenie różnicy w sekundach
+$secondsRemaining = $sylwesterTimestamp - $currentTimestamp;
+
+// Obliczanie dni, godzin, minut i sekund
+$days = floor($secondsRemaining / (60 * 60 * 24));  // Liczba dni
+$hours = floor(($secondsRemaining % (60 * 60 * 24)) / (60 * 60));  // Godziny
+$minutes = floor(($secondsRemaining % (60 * 60)) / 60);  // Minuty
+$seconds = $secondsRemaining % 60;  // Sekundy
+
+// Wyświetlanie wyników
+echo "Pozostało: $days dni, $hours godzin, $minutes minut, $seconds sekund do Sylwestra!";
+?>
